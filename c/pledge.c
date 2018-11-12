@@ -8,7 +8,6 @@ int main()
 	if (pledge("stdio", NULL) != 0) {
 		err(1, "pledge");
 	}
-	printf("Hallo Welt!\n");
-	sleep(5);
+	getchar();
 	exit(0);
 }
