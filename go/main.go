@@ -1,14 +1,13 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"time"
+	"os"
 )
 
 func main() {
 	fmt.Println("Hallo Welt…")
-	for i := 0; i < 10; i++ {
-		time.Sleep(5 * time.Second)
-		fmt.Println("pledge?…")
-	}
+	reader := bufio.NewReader(os.Stdin)
+	reader.ReadLine()
 }
